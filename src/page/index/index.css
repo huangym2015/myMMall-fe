@@ -1,0 +1,13 @@
+/*
+* @Author: Ian
+* @Date:   2018-02-25 10:46:58
+* @Last Modified by:   Ian
+* @Last Modified time: 2018-02-26 10:14:46
+*/
+
+body{
+    background: #ccc;
+    font-size: 50px;
+    color:red;
+    background-image: url('../../image/1.jpg'); 
+}

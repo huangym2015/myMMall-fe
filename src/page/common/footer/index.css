@@ -1,0 +1,23 @@
+/*
+* @Author: Ian
+* @Date:   2018-02-27 22:23:00
+* @Last Modified by:   Ian
+* @Last Modified time: 2018-02-27 22:28:43
+*/
+
+.footer{
+    padding-bottom: 10px;
+}
+.footer .links{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .copyright{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}

@@ -2,7 +2,7 @@
 * @Author: Ian
 * @Date:   2018-02-27 19:59:43
 * @Last Modified by:   Ian
-* @Last Modified time: 2018-02-28 08:36:53
+* @Last Modified time: 2018-03-12 21:29:14
 */
 
 /* css reset */
@@ -82,7 +82,7 @@ input[type='checkbox']{
     padding: 0 10px;
 }
 
-/* loading */
+/* loading图标 */
 .loading{
     margin: 10px auto;
     display: block;
@@ -94,4 +94,22 @@ input[type='checkbox']{
     opacity: .6;
 }
 
+/*panel*/
+.panel{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
+.panel .panel-body{
+    padding: 10px;
+    overflow: hidden;
+}
 

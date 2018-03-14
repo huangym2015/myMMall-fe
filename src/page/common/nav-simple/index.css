@@ -2,7 +2,7 @@
 * @Author: Ian
 * @Date:   2018-02-27 21:53:22
 * @Last Modified by:   Ian
-* @Last Modified time: 2018-02-27 21:56:56
+* @Last Modified time: 2018-03-12 20:47:08
 */
 .nav-simple{
     height: 60px;
@@ -14,4 +14,5 @@
     font-size: 26px;
     font-weight: bold;
     color: #c60023;
+    text-decoration: none;
 }

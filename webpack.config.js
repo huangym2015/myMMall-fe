@@ -2,7 +2,7 @@
 * @Author: Ian
 * @Date:   2018-02-25 09:46:43
 * @Last Modified by:   Ian
-* @Last Modified time: 2018-02-28 15:32:11
+* @Last Modified time: 2018-03-13 23:45:37
 */
 
 var webpack = require('webpack');
@@ -31,7 +31,12 @@ config ={
     entry:{
         'common' : ['./src/page/common/index.js'],
         'index' : ['./src/page/index/index.js'],
-        'login' : ['./src/page/login/index.js'],
+        'user-login' : ['./src/page/user-login/index.js'],
+        'user-register' : ['./src/page/user-register/index.js'],       
+        'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],  
+        'user-pass-update' : ['./src/page/user-pass-update/index.js'],  
+        'user-center' : ['./src/page/user-center/index.js'],
+        'user-center-update' : ['./src/page/user-center-update/index.js'],
         'result' : ['./src/page/result/index.js']
     },
     output:{
@@ -50,8 +55,7 @@ config ={
             //单独打包Css的插件EX 1.x的用法
             { test : /\.css$/,loader : Ex.extract("style-loader","css-loader") },
             //1.x以上的用法
-            //{ test : /\.css$/,loader : Ex.extract({fallback: 'style-loader', use: ['css-loader']}) },
-           
+            //{ test : /\.css$/,loader : Ex.extract({fallback: 'style-loader', use: ['css-loader']}) },          
             { test : /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/,loader : 'url-loader?limit=100&name=/resource/[name].[ext]' },
             { test : /\.string$/,loader : 'html-loader'},
         ]
@@ -76,8 +80,13 @@ config ={
         new Ex("css/[name].css"),
         //html模板的处理
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
-        new HtmlWebpackPlugin(getHtmlConfig('login','用户登录')),
-         new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','找回密码')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update','修改密码')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center','个人中心')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center-update','修改个人信息')),
+        new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
     ]
 };
 
